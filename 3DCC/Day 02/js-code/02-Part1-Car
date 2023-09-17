@@ -1,0 +1,15 @@
+var paintColor = 'Grey';
+var make = 'Nissan';
+var model = 'Maxima';
+var year = '2008'
+var isManualTransmission = false;
+var seats = 4;
+var mileage = 99905;
+
+console.log (paintColor);
+console.log (make);
+console.log (model);
+console.log (year);
+console.log (isManualTransmission);
+console.log (seats);
+console.log (mileage);

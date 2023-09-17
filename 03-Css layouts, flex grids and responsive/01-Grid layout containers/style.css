@@ -1,0 +1,43 @@
+.container {
+  display: grid;
+  /* 
+  1fr means 1 fraction
+  */
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  /*
+  gap is distance between elements (like the margin)
+  */
+  column-gap: 10px;
+  row-gap: 10px;
+  /* 
+  shorthand first = rows second = columns gap
+  */
+  gap: 10px 10px;
+  /*stretch is de default for all the following properties*/
+  /* this align horizontally */
+  justify-items: stretch;
+  /* this align vertically */
+  align-items: stretch;
+  /*
+  possible values are: space-around, Space-between, space-evenly
+  */
+  justify-content:stretch ;
+
+}
+
+.header{
+  background-color: red;
+}
+
+.main{
+  background-color: yellowgreen;
+}
+
+.sidebar{
+  background-color: blueviolet;
+}
+
+.footer{
+  background-color: firebrick;
+}

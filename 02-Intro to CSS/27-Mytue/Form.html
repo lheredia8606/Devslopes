@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload New Video</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <nav>
+      <a href="./">Home</a>
+      <a href="./Pages/soccer.html">Soccer</a>
+      <a href="./Pages/basketball.html">Basketball</a>
+      <a href="./Pages/skateboard.html">Skateboard</a>
+      <a href="./Form.html">New Video</a>
+    </nav>
+    <div class="div-main">
+    <h1>Add New Video</h1>
+    <form>
+      <div id="divTitle">
+        <label for="inpTitle" id="lblTitle"><strong>Video Title*</strong></label><br>
+        <input type="text" placeholder="Title" name="inpTitle" id="inpTitle" required><br>
+      </div>
+      
+      <div id="divDescription">
+        <label for="txtDescription"><strong>Description*</strong></label><br>
+        <textarea name="txtDescription" id="txtDescription" cols="20" rows="8" placeholder="Description"></textarea><br>
+      </div>
+      
+      <div id="divFile">
+        <label for="fileChosser"><strong>Video*</strong> </label><br>
+        <input type="file" name="fileChosser" id="fileChosser" required>
+      </div>
+      
+      <div>
+        <label for="slcCollection"><strong>Collection</strong></label>
+        <select id="slcCollection" name="slcCollection">
+          <option value="soccer">Soccer</option>
+          <option value="basketball">Basketball</option>
+          <option value="skateboard">Skateboard</option>
+        </select> 
+      </div>
+      
+      <div id="divPrivacity">
+        <input type="radio" name="rdPrivacity" id="rdPublic">
+        <label for="rdPublic">Public</label>
+        <input type="radio" name="rdPrivacity" id="rdPrivate">
+        <label for="rdPrivate">Private</label>
+    </div>
+    <input type="submit">
+  </form>
+    <hr>
+    <footer>
+      <div>&amp;copy: Copyright"</div>
+    </footer>
+  </div>
+</body>
+</html>

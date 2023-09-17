@@ -1,0 +1,12 @@
+var dateOfBirth = 'Jun 13, 1986';
+var fullName = 'Leandro Heredia';
+var age = 36;
+var isOrganDonor = false;
+var state = 'Florida';
+var city = 'Tampa';
+var streetAddress = '123 someWhere';
+var zipCode = 33615;
+var idNumber = '123ASDHJ';
+var licenseType = 'Class E';
+console.log('Hi, my name is ' + fullName + ', I was born on ' + dateOfBirth + ', I live at '+
+             streetAddress + ' ' + city + ' ' + state + ' ' + zipCode + ' and my id number is '+ idNumber);

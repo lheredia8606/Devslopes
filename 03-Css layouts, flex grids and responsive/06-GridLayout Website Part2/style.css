@@ -1,0 +1,90 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: rgb(28, 27, 27);
+}
+
+nav{
+  background-color: rgb(53, 51, 51);
+  padding: 5px;
+  text-align: right;
+  box-shadow: 0px 2px 15px #4e4e4d;
+}
+nav a {
+  text-decoration: none;
+  font-size: 1.5em;
+  padding: 0 10px;
+}
+
+section{
+  margin: 0 20px;
+  text-align: center;
+  color: blanchedalmond;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.portfolio-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 30px;
+  justify-items: center;
+}
+
+.portfolio-item {
+  background-color: darkslategray;
+  color: aliceblue;
+  width: 135px;
+  height: 105px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.portfolio-item:nth-child(even){
+  background-color: aliceblue;
+  color: darkslategray;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 90px);
+  grid-template-areas: 
+  "form form rectangle1 rectangle2"
+  "form form rectangle3 rectangle4"
+  ;
+  gap: 20px;
+}
+
+.contact-item1 {
+  grid-area: form;
+  background-color: darkslategray;
+  display: flex;
+  justify-content: left;
+}
+.contact-item2 {
+  grid-area: rectangle1;
+  background-color: darkslategray;
+}
+.contact-item3 {
+  grid-area: rectangle2;
+  background-color: darkslategray;
+}
+.contact-item4 {
+  grid-area: rectangle3;
+  background-color: darkslategray;
+}
+.contact-item5 {
+  grid-area: rectangle4;
+  background-color: darkslategray;
+}
+
+input, textarea {
+  width: 90%;
+}
+label {
+  text-align: left;
+}

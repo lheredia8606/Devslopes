@@ -1,0 +1,30 @@
+h1 {
+  color: red;
+}
+h2 {
+  color: blue;
+}
+em {
+  color: green;
+}
+button {
+  color: black;
+  border-radius: 5px;
+  padding: 8px 10px;
+}
+input{
+  border-radius: 5px;
+}
+input:focus{
+  outline: none;
+  border: 2px solid #6002ee;
+}
+.btn-primary{
+  background-color: #7e3ff2;
+  border: 1px solid #7e3ff2;
+  color: #efe5fd;
+}
+
+#numberInput{
+  background-color: aquamarine;
+}

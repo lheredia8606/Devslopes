@@ -1,0 +1,54 @@
+body{
+  background-color: beige;
+  font-family: cursive;
+}
+.div-global{
+  max-width: 1000px;
+  margin: auto;
+}
+.main-header {
+  text-align: center;
+}
+img {
+  text-align: center;
+  border-radius: 50%;
+  width: 200px;
+  margin: auto;
+  display: block;
+
+}
+.div-img-quote{
+  border: 1px solid rgb(200, 198, 198);
+  padding-top: 20px;
+}
+.div-quote{
+  margin: 20px 5px 5px;
+  padding: 5px 15px;
+  background-color: burlywood;
+  border: 1px solid rgb(159, 132, 97);
+}
+span{
+  padding: 5px 10px;
+  margin-left: 15px;
+}
+
+li{
+  padding-right: 20px;
+  text-align: justify;
+  margin: 10px;
+}
+
+#quote-author{
+  display: block;
+  text-align: right;
+  margin-right: 15px;
+}
+
+.more-about {
+  font-size: 1.6em;
+  text-align: center;
+}
+
+ul{
+  list-style: circle;
+}

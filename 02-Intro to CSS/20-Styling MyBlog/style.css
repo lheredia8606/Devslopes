@@ -1,0 +1,165 @@
+body{
+  background-color: bisque;
+}
+header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: darkturquoise;
+  padding: 7px 15px;
+}
+header * {
+  display: inline;
+  vertical-align: middle;
+  background-color: darkturquoise;
+}
+header p{
+  font-size: 2em;
+}
+header select {
+  font-size: 0.6em;
+  width: auto;
+  border: none;
+  text-align: right;
+  background-color: darkturquoise;
+}
+header div {
+  float: right;
+  margin-top: 14px;
+}
+header button {
+  background-color: rgb(76, 76, 228);
+  border-radius: 10px;
+}
+option{
+  text-align: center;
+}
+
+header + hr {
+  margin: 62px -10px 0;
+}
+.content {
+  margin: auto;
+  width: 600px;
+} 
+
+.profile {
+  position: relative;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 10px 0px 12px;
+  height: 40px;
+}
+.author {
+  width: 30px;
+  border-radius: 50%;
+}
+#img-author{
+  position: absolute;
+  top: 7px;
+}
+
+.date-name {
+  margin-left: 40px;
+  position: absolute;
+}
+
+#div-share {
+  position: absolute;
+  align-items: center;
+  display: flex;
+  right: 2px;
+  top: 13px;
+}
+
+#div-share img{
+  width: 40px;
+}
+p{
+  text-align: justify;
+}
+
+.main-image {
+  display: block;
+  margin: auto;
+  width: 800px;
+}
+
+.quote {
+  background-color: rgb(229, 228, 238);
+  position: relative;
+  text-align: right;
+}
+
+.quote p{
+  font-size: 1.7em;
+  padding: 15px 15px 40px;
+  text-align: center;
+  line-height: 1.8em;
+  margin: 0px;
+
+}
+.quote span{
+  position: absolute;
+  display: block;
+  bottom: 15px;
+  right: 80px;
+}
+.div-suscribe {
+  background-image: url(./form-bcgd.png);
+  height: 100px;
+  text-align: center;
+  padding-top: 20px;
+}
+.div-suscribe input {
+  height: 23px;
+  margin-top: 15px;
+  margin-left: 20px;
+}
+.div-suscribe span {
+  color: white;
+  font-size: 1.5em;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 1.5px;
+}
+
+.div-share2 {
+  margin-top: 13px;
+ display: flex;
+ align-items: center;
+}
+
+.div-share2 img{
+  margin-right: 5px;
+  width: 20px;
+}
+.div-share2 span{
+margin-right: 20px;
+}
+
+#img-author{
+  width: 30px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.div-author2{
+  padding: 10px;;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  margin-top: 15px;
+  display: flex;
+}
+.div-author2 p{
+  display: inline;
+  margin: 0px;
+  margin-left: 10px;
+}
+
+.div-author2 span{
+  text-transform: uppercase;
+  color: blue;
+}

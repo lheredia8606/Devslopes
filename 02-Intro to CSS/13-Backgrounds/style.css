@@ -1,0 +1,10 @@
+body{
+  /* background-color: beige;
+  background-image: url(https://img.freepik.com/free-photo/red-white-cat-i-white-studio_155003-13189.jpg?w=360);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-attachment: fixed; */
+  background: beige url(https://img.freepik.com/free-photo/red-white-cat-i-white-studio_155003-13189.jpg?w=360) 
+  no-repeat top right fixed;
+  background-size: 10%;
+}

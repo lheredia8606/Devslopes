@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!--
+    action defines an action to be performed when the form was submited
+    target specify where to display the response "_target", "_self", "_parent"
+    method Specify http method to submit the data  "get" "post"
+  -->
+  <form action="action_page.php" target="_target" method="post"> 
+    <h3>Name:</h3>
+    <label for="firstName">First Name:</label><br>
+    <input id="firstName" name="firstName" type="text"><br>
+    <label for="lastName">Last Name:</label><br>
+    <input id="lastName" name="lastName" type="text">
+    <h3>Sex:</h3>
+    <input id="male" name="gender" type="radio">
+    <label for="male">Male</label><br>
+    <input id="female" name="gender" type="radio">
+    <label for="female">Female</label><br>
+    <input type="radio" name="gender" id="other">
+    <label for="other">Other</label><br>
+    <h3>Hobbies</h3>
+    <input type="checkbox" name="gaming" id="gamin">
+    <label for="gamin">Gaming</label><br>
+    <input type="checkbox" name="codding" id="codding">
+    <label for="codding">Codding</label><br>
+    <input type="checkbox" name="family" id="family">
+    <label for="family">Family</label>
+    <br><br><br>
+    <input type="submit">
+
+
+  </form>
+</body>
+</html>

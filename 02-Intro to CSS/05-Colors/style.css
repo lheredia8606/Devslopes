@@ -1,0 +1,26 @@
+body{
+  background-color: rgb(195, 242, 247);
+}
+h3{
+  /* hsl */
+  background-color: hsl(137, 91%, 56%);
+  width: 100px;
+  text-align: center;
+  /* hsla  same that hsl but with transparency */
+  border: 3px solid hsla(137, 71%, 26%, 0.6);
+  border-radius: 5px;
+  margin-bottom: 8px;
+}
+
+label{
+  color: blue;
+  border: 1px solid blue;
+  border-radius: 5px;
+  padding: 1px 4px;
+  margin-bottom: 100px;
+}
+
+input{
+  margin-top: 10px;
+  background-color: hsla(0, 100%, 50%, 0.2) ;
+}

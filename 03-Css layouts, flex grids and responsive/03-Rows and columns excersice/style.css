@@ -1,0 +1,52 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 30px);
+  column-gap: 5px;
+  row-gap: 5px;
+  width: 135px;
+  color: white;
+}
+.d1 {
+  background-color: darkblue;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row: 1 / span 2;
+  text-align: center;
+  
+}
+.d2 {
+  background-color: aqua;
+}
+.d3 {
+  background-color: aqua;
+}
+
+.d4 {
+  background-color: limegreen;
+  grid-column: 3 / span 2;
+}
+
+.d5 {
+  background-color: aqua;
+}
+
+.d6 {
+  background-color: aqua;
+}
+
+.d7 {
+  background-color: aqua;
+  grid-column: 1 / span 1;
+}
+
+.d8 {
+  background-color: aqua;
+}
+
+.d9 {
+  background-color: darkblue;
+  grid-column: 3 / span 2;
+  grid-row: 3 / span 2;
+}
+

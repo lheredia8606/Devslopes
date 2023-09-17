@@ -1,0 +1,35 @@
+body {
+  background-color: aliceblue;
+  
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 2fr 5fr 0.5fr;
+  grid-template-columns: 1fr 1fr 0.5fr;
+  grid-template-areas: 
+  "header header header"
+  "main main sidebar"
+  "footer footer footer";
+}
+
+.header {
+  background-color: beige;
+  grid-area: header;
+}
+
+.main {
+  background-color: aqua;
+  grid-area: main;
+
+}
+
+.sidebar {
+  background-color: burlywood;
+  grid-area: sidebar;
+}
+
+.footer {
+  background-color: coral;
+  grid-area: footer;
+}

@@ -1,0 +1,19 @@
+h1{
+  color: dodgerblue;
+  text-align: left;
+  text-decoration: underline dashed;
+  text-transform: capitalize;
+}
+p{
+  color: #3f3844;
+  text-align: justify;
+  width: 800px;
+  text-indent: 20px;
+  letter-spacing: .9px;
+  line-height: 1.2em;
+}
+
+a{
+  text-transform: uppercase;
+  text-decoration: none;
+}

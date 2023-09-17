@@ -1,0 +1,41 @@
+
+body {
+  text-align: center;
+}
+.container{
+  width: 30%;
+  border: 2px solid blueviolet;
+  border-radius: 20px;
+  padding: 0 10px 0;
+  text-align: center;
+}
+div div{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+}
+
+span{
+  height: 20px;
+  margin-left: 5px;
+  font-size: 1.4em;
+  padding: 0 3px 5px;
+}
+img{
+  width: 20px;
+  height: 20px;
+  margin: 10px;
+}
+#pro1 {
+  flex-direction: column;
+}
+#pro1 >img{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.home:hover, .about:hover, .portfolio:hover,.contact:hover{
+  background-color: rgb(174, 236, 236);
+}

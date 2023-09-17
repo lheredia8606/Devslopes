@@ -1,0 +1,33 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  column-gap: 10px;
+  row-gap: 10px;
+  gap: 10px 10px;
+  justify-items: stretch;
+  align-items: stretch;
+  justify-content:stretch ; 
+}
+
+.header{
+  background-color: red;
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+
+.main{
+  background-color: yellowgreen;
+  grid-column: 1 / 4;
+}
+
+.sidebar{
+  background-color: blueviolet;
+  grid-column: 4;
+  grid-row: 2 / span 3;
+}
+
+.footer{
+  background-color: firebrick;
+  grid-column: 1 / span 2;
+}

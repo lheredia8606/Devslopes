@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Employee Interests Survey form</h1>
+  <form>
+    <label for="fullName">Name:</label>
+    <input type="text" name="fullname" id="fullname" placeholder="Enter your name">
+    <br>
+    <label for="department">Department</label>
+    <input type="text" name="department" id="department" placeholder="Enter your department">
+    <br>
+    <label for="department">Tell us a little abut yourself:</label>
+    <br>
+    <textarea name="department" id="department" cols="20" rows="5"></textarea>
+    <br>
+    <label for="excersice">Do you exercise at home?</label>
+    <input type="radio" name="exercise" id="excerciseyes">
+    <label for="excerciseyes">Yes</label>
+    <input type="radio" name="exercise" id="exerciseno">
+    <label for="exerciseno">No</label>
+    <br>
+    <label>How yow like to read about your favorite topics?</label>
+    <br>
+    <input type="checkbox" name="topics" id="topicphone">
+    <label for="topicphone">Phone Apps</label>
+    <input type="checkbox" name="topics" id="topiconline">
+    <label for="topiconline">Online</label>
+    <input type="checkbox" name="topics" id="topicbook">
+    <label for="topicbook">Books</label>
+    <input type="checkbox" name="topics" id="topicmagazines">
+    <label for="topicmagazines">Magazines</label>
+    <br>
+    <label for="moviegenre">What is your favorite movie genre?</label>
+    <input list="genres"  value="Choose...">
+    <datalist id="genres">
+      <option>Choose...</option>
+      <option>Terror</option>
+      <option>Fiction</option>
+      <option>Action</option>
+      <option>Drama</option>
+    </datalist>
+    <br>
+    <input type="submit" target="_blank">
+  </form>
+  <h3>will handle the space between elements in css (when I learn css of course :) )</h3>
+</body>
+</html>

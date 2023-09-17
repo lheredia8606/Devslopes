@@ -1,0 +1,29 @@
+/*direct*/
+h2 {
+  background-color: burlywood;
+}
+
+/*descendent selector  (all p inside section)*/
+section p {
+  background-color: cyan;
+}
+
+/*child selector (only p thar are 1 and only 1 layer deep )*/
+section > p {
+  border: 1px solid black;
+}
+
+/*adjacent sibling selector (first p after section end)*/
+section + p {
+  background-color: darkslateblue;
+  color: white;
+  border: 1px solid black;
+  border-radius: 3px;
+  padding: 2px 6px;
+
+}
+
+/*general sibling selector (all p after section end)*/
+section ~ p {
+  background-color: darksalmon;
+}

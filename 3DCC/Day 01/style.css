@@ -1,0 +1,70 @@
+html, 
+body {
+    height: 100vh;
+    background: #9c9;
+}
+#warp{
+    width:230px;
+    height:230px;
+    margin:50px auto;
+}
+#clock{
+    width:200px;
+    height:200px;
+    border-radius:115px;
+    border:15px solid #f96;
+    background:white;
+    position:relative;
+}
+#number {
+  counter-reset: section;
+  
+  div{
+    width:190px;
+    height:20px;
+    position:absolute;
+    left:10px;
+    top:90px;
+    counter-increment: section;
+  
+    &:before {
+      content: counter(section);
+      display:block;
+      width:20px;
+      height:20px;
+    }
+}
+    @for $i from 1 through 12 {
+      div:nth-child(#{$i}){
+        transform: rotate($i * 30deg + 90deg);
+      
+        &:before {
+          transform: rotate($i * (-30deg) - 90deg);
+        }
+      }
+    }
+}
+
+.pointer{
+    position:absolute;
+    bottom:90px;
+    transform-origin:50% 90%;
+}
+#houre{
+    width:5px;
+    height:60px;
+    left:98px;
+    background:black;
+}
+#minute{
+    width:3px;
+    height:70px;
+    left:99px;
+    background:gray;
+}
+#second{
+    width:1px;
+    height:80px;
+    left:100px;
+    background:red;
+}
