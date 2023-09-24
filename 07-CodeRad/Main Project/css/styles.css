@@ -28,8 +28,7 @@
   color: var(--white);
 }
 
-.bg-header {
-  background-image: url("../assets/img/bg-header-1.jpg");
+.bg-header, .video-demo {
   background-color: var(--footer);
   background-repeat: no-repeat;
   background-size: cover;
@@ -37,6 +36,10 @@
   position: relative;
   z-index: 1;
   padding: 4.6875rem 0;
+}
+
+.bg-header {
+  background-image: url("../assets/img/bg-header-1.jpg");
 }
 
 .nav-link a {
@@ -147,5 +150,44 @@ span.bg-color5 {
 }
 span.bg-color5 {
   background-image: linear-gradient(90deg, #a1ecff 0%, #7dbcff 100%);
+}
+
+.video-demo {
+  background-image: url("../assets/img/bg-demo.jpg");
+  text-align: center;
+}
+
+.video-demo .block-text {
+  padding-right: 0;
+}
+
+.video-demo .block-text h2,
+.video-demo .block-text p {
+  color: var(--white);
+}
+
+.video-box{
+  position: relative;
+}
+.video-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 10px 20px rgba(57, 166, 251, 0.3);
+}
+
+.video-btn img{
+  width: var(--size-100);
+  height: var(--size-100);
+}
+
+.video-box {
+  margin-bottom: -9.375rem;
+}
+
+.video-box > img {
+  border-radius: 8px;
+  max-width: 600px;
 }
 
