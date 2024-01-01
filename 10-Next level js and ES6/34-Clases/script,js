@@ -1,0 +1,20 @@
+class Person {
+  constructor(name, hobby){
+    this.name = name;
+    this.hobby = hobby;
+  }
+  greeting (){
+    console.log(`Hi, my name is ${this.name}`);
+  }
+  myHobby(){
+    console.log(`my fav hobby is ${this.hobby}`);
+  }
+}
+
+person1 = new Person('leo', 'codding');
+person2 = new Person('mara', 'cooking');
+
+person1.greeting();
+person1.myHobby();
+person2.greeting();
+person2.myHobby();
