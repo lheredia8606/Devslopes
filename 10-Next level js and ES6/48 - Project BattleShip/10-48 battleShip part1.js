@@ -37,7 +37,7 @@ function validatePlayerMove(playerMove, limit){
   if(playerMove && playerMove.length === 2){
     [x,y] = playerMove.split('');
     let spotX = Number(x.toLowerCase().charCodeAt()) - 'a'.charCodeAt();
-    let spotY = Number(y);
+    let spotY = Number(y) -1;
     if (isInsideRange(spotX,limit) && isInsideRange(spotY,limit)){
       return [spotX,spotY]
     }
@@ -48,20 +48,20 @@ function doPlayerMove(limit){
   let playerMove = rs.question("Enter a location to strike ie 'A2' ");
   [spotX, spotY] = validatePlayerMove(playerMove, limit);
   if(spotX !== -1){
-    console.log(processPlayerMove(spotX, spotY-1));
+    console.log(processPlayerMove(spotX, spotY));
   } else{
     console.log('Please enter a valid location');
   }
 }
 
 function processPlayerMove(spotX, spotY){
+  console.log (`x = ${spotX} and y = ${spotY}`);
   let message = '';
   if(board[spotX][spotY] === 'B'){
     board[spotX][spotY] = 'O';
     shipRemaining --;
     message =  `Hit. You have sunk a battleship. ${shipRemaining} ship remaining`;
-  }
-  else{
+  } else{
     message =  board[spotX][spotY] === '' ? 'You have missed!' : "You have already picked this location. Miss!";
     board[spotX][spotY] = 'O';
   }

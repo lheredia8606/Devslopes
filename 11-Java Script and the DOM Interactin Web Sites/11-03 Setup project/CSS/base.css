@@ -39,6 +39,7 @@ p {margin-top: 0;}
 
 button{ outline: none;}
 
+.container,
 .container-fluid{
   width: 100%;
   padding-left: 15px;
@@ -47,7 +48,7 @@ button{ outline: none;}
   margin-right: auto;
 }
 
-.container{ max-width: 1140;}
+.container{ max-width: 1140px;}
 
 .ul-defaults-none{
   list-style: none;

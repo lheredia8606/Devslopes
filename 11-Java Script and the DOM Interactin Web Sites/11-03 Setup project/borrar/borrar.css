@@ -1,0 +1,29 @@
+.container{
+  display: flex;
+  justify-content: center;
+}
+.portfolio-grid{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 33px;
+  max-width: 1700px;
+}
+.portfolio-card{
+  position: relative;
+}
+
+.portfolio-card .card-popup-box{
+  position: absolute;
+  top: 255px;
+  left: 140px;
+  background-color: rgba(255,255,255,0.7);
+  text-align: center;
+  padding: 23px 23px 0px;
+  border-radius: 30px;
+}
+
+
+img{
+  width: 400px;
+  height: 400px;
+}
