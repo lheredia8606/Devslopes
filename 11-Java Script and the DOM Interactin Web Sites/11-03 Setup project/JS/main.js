@@ -125,7 +125,7 @@ searchBox.addEventListener('keyup', (item)=>{
   });
 });
 
-//full Site Modal "opn buttons"
+//   Modal/full Site Modal "opn buttons"
 for (const elm of openModal) {
   elm.addEventListener("click", function (){
     const modalId = this.dataset.open;
@@ -139,3 +139,15 @@ for (const elm of closeModal) {
     document.getElementById(modalID).classList.remove(isVisible);
   });
 }
+
+document.addEventListener('click', (e)=>{
+  if(e.target === document.querySelector(`.modal.${isVisible}`)){
+    document.querySelector(`.modal.${isVisible}`).classList.remove(isVisible);
+  }
+});
+
+document.addEventListener('keyup', (e)=>{
+  if(e.key === 'Escape' && document.querySelector(`.modal.${isVisible}`)){
+    document.querySelector(`.modal.${isVisible}`).classList.remove(isVisible);
+  }
+});
