@@ -114,7 +114,6 @@ for (const link of filterLink) {
 
 searchBox.addEventListener('keyup', (item)=>{
   itemValue = item.target.value.toLowerCase().trim();
-  console.log(itemValue);
   portfolioItems.forEach((portfolioItem)=>{
     if(portfolioItem.dataset.item.includes(itemValue)){
       portfolioItem.style.display = 'block';
@@ -151,3 +150,12 @@ document.addEventListener('keyup', (e)=>{
     document.querySelector(`.modal.${isVisible}`).classList.remove(isVisible);
   }
 });
+
+const elmsdisplay = getComputedStyle(root).getPropertyValue('--marquee-elms-displayed');
+const marqueeContent = document.querySelector('ul.marquee-content');
+
+root.style.setProperty('--marquee-elms', marqueeContent.children.length);
+
+for (let i = 0; i < elmsdisplay; i++) {
+  marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
+}
